@@ -1,0 +1,94 @@
+{
+  "name": "quick-aliases",
+  "displayName": "Quick Aliases",
+  "description": "An extension to manage quick terminal aliases.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+      "vscode": "^1.50.0"
+  },
+  "categories": [
+      "Other"
+  ],
+  "contributes": {
+      "commands": [
+          {
+              "command": "quick-aliases.gitStatus",
+              "title": "Git Status"
+          },
+          {
+              "command": "quick-aliases.gitAdd",
+              "title": "Git Add"
+          },
+          {
+              "command": "quick-aliases.gitCommit",
+              "title": "Git Commit"
+          },
+          {
+              "command": "quick-aliases.gitPush",
+              "title": "Git Push"
+          },
+          {
+              "command": "quick-aliases.gitBranch",
+              "title": "Git Branch"
+          },
+          {
+              "command": "quick-aliases.gitSwitch",
+              "title": "Git Switch"
+          },
+          {
+              "command": "quick-aliases.createTestFile",
+              "title": "Create Test File"
+          }
+      ],
+      "menus": {
+          "commandPalette": [
+              {
+                  "command": "quick-aliases.gitStatus",
+                  "when": "editorTextFocus",
+                  "group": "navigation"
+              },
+              {
+                  "command": "quick-aliases.gitAdd",
+                  "when": "editorTextFocus",
+                  "group": "navigation"
+              },
+              {
+                  "command": "quick-aliases.gitCommit",
+                  "when": "editorTextFocus",
+                  "group": "navigation"
+              },
+              {
+                  "command": "quick-aliases.gitPush",
+                  "when": "editorTextFocus",
+                  "group": "navigation"
+              },
+              {
+                  "command": "quick-aliases.gitBranch",
+                  "when": "editorTextFocus",
+                  "group": "navigation"
+              },
+              {
+                  "command": "quick-aliases.gitSwitch",
+                  "when": "editorTextFocus",
+                  "group": "navigation"
+              },
+              {
+                  "command": "quick-aliases.createTestFile",
+                  "when": "editorTextFocus",
+                  "group": "navigation"
+              }
+          ]
+      }
+  },
+  "scripts": {
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./",
+      "watch": "tsc -p ./ --watch",
+      "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+      "typescript": "^4.0.3",
+      "vscode-test": "^1.3.0"
+  }
+}
