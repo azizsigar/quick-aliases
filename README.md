@@ -5,7 +5,7 @@ This is the README for your extension "quick-aliases". After writing up a brief 
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
+cCc
 For example if there is an image subfolder under your extension project workspace:
 
 \!\[feature X\]\(images/feature-x.png\)
@@ -47,7 +47,7 @@ Fixed issue #.
 
 Added features X, Y, and Z.
 
----
+---its now runin
 
 ## Working with Markdown
 

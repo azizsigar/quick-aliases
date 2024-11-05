@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./out",
+    "rootDir": "./src",
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "checkJs": false, // Don't check JavaScript files
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"], // Include all files inside the src folder
+  "exclude": ["node_modules", ".vscode-test"] // Exclude node_modules and test folder
+}
